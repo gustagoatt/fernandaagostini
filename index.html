@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Fernanda Agostini | Harmonização facial e corporal em Primavera do Leste – MT</title>
+<meta name="description" content="Harmonização facial e corporal em Primavera do Leste – MT com a Dra. Fernanda Agostini. Avaliação individual, plano sob medida e resultado natural. Agende pelo WhatsApp.">
+<meta property="og:title" content="Clínica Fernanda Agostini | Harmonização facial e corporal">
+<meta property="og:description" content="Realçar o que é seu, sem mudar quem você é. Agende sua avaliação em Primavera do Leste – MT.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/fernanda-agostini.jpg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#EFEEEC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Clínica Fernanda Agostini – Harmonização Facial e Corporal",
+  "telephone": "+55-66-99601-4364",
+  "url": "https://drafernandaagostini.com.br/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Primavera do Leste", "addressRegion": "MT", "addressCountry": "BR" },
+  "sameAs": ["https://www.instagram.com/clinicafernandaagostini/", "https://www.instagram.com/drafernandaagostini_/"]
+}
+</script>
+
+<style>
+/* ================= DESIGN SYSTEM ================= */
+:root{
+  /* Paleta da identidade: cinza, marrom e dourado */
+  --bg:#EFEEEC;        /* cinza claro */
+  --surface:#FAF9F7;
+  --blush:#E3DFD9;     /* cinza-areia — faixas de destaque */
+  --blush-soft:#F3EEE6;/* seleção */
+  --rose:#8C6A3D;      /* dourado escuro — palavras em itálico e detalhes em fundo claro */
+  --gold:#C9A86F;      /* dourado — detalhes em fundo escuro */
+  --cta:#5A4332;       /* marrom — ação principal, uso exclusivo em botões */
+  --cta-hover:#47352A;
+  --ink:#262626;       /* grafite */
+  --ink-2:#625E5A;
+  --ink-3:#BCB7B1;
+  --line:#D8D4CE;
+  --dark:#2A2A2B;      /* grafite do perfil */
+  --dark-line:#403F3D;
+  --on-dark:#EFEEEC;
+  --on-dark-2:#A8A39D;
+
+  --sans:"Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --accent:"Bodoni Moda", Didot, "Times New Roman", serif;
+
+  --container:1200px;
+  --gutter:clamp(20px,5vw,48px);
+  --section:clamp(80px,11vw,140px);
+  --r:14px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+
+h1,h2,h3{margin:0;font-weight:500;letter-spacing:-.035em;line-height:1.02}
+h1{font-size:clamp(46px,8.2vw,112px)}
+h2{font-size:clamp(34px,4.6vw,60px);max-width:16ch}
+h3{font-size:19px;letter-spacing:-.01em;line-height:1.3;font-weight:600}
+.it{font-family:var(--accent);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--rose)}
+p{margin:0}
+.lead{font-size:clamp(17px,1.5vw,19px);color:var(--ink-2);max-width:50ch}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-2);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:1px;background:var(--rose)}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:58px;padding:0 10px 0 26px;border-radius:999px;background:var(--cta);color:#fff;text-decoration:none;font-weight:600;font-size:16px;border:0;cursor:pointer;transition:transform .25s var(--ease), background .2s}
+.btn:hover{background:var(--cta-hover)}
+.btn .arr{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;transition:transform .35s var(--ease), background .2s}
+.btn .arr svg{width:18px;height:18px}
+.btn:hover .arr{transform:rotate(-45deg);background:rgba(255,255,255,.24)}
+.btn:hover .arr.wa{transform:scale(1.08)}
+.btn .arr.wa svg{width:20px;height:20px}
+.btn:active{transform:scale(.98)}
+.btn.light{background:var(--on-dark);color:var(--cta)}
+.btn.light:hover{background:#fff}
+.btn.light .arr{background:rgba(90,67,50,.1)}
+.textlink{display:inline-flex;align-items:center;gap:8px;font-weight:500;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;padding-bottom:2px;transition:background-size .35s var(--ease)}
+.textlink:hover{background-size:100% 1px}
+
+/* Placeholders de foto */
+.photo{position:relative;overflow:hidden;border-radius:var(--r);background:#D6D2CC}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;color:#8D6F6C;font-size:13px;padding:20px}
+.photo .ph b{font-family:var(--accent);font-style:italic;font-weight:400;font-size:64px;line-height:1;color:#A9827E}
+
+/* ================= HEADER ================= */
+.header{position:fixed;inset:0 0 auto;z-index:50;transition:transform .4s var(--ease), background .3s, box-shadow .3s}
+.header.solid{background:rgba(239,238,236,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+.header.hide{transform:translateY(-100%)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{text-decoration:none;line-height:1;display:flex;align-items:center;gap:12px}
+.logo .mk{width:42px;height:42px;border-radius:50%;background:var(--dark);display:grid;place-items:center;flex:none}
+.logo .mk svg{width:21px;height:21px}
+.logo b{display:block;color:var(--ink);font-size:17px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.logo .lt > span{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-top:5px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav .nl{font-size:15px;text-decoration:none;color:var(--ink-2);transition:color .2s}
+.nav .nl:hover{color:var(--ink)}
+.nav .btn{min-height:46px;padding:0 6px 0 20px;font-size:14.5px}
+.nav .btn .arr{width:34px;height:34px}
+
+/* ================= HERO ================= */
+.hero{padding:clamp(120px,15vw,170px) 0 clamp(64px,8vw,104px)}
+.hero h1{max-width:14ch;font-size:clamp(44px,6vw,86px)}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .line > span{display:inline-block;transform:translateY(105%);transition:transform 1s var(--ease)}
+.loaded .hero h1 .line > span{transform:none}
+.hero h1 .line:nth-child(2) > span{transition-delay:.08s}
+.hero h1 .line:nth-child(3) > span{transition-delay:.16s}
+.fade-up{opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease) .35s, transform .9s var(--ease) .35s}
+.loaded .fade-up{opacity:1;transform:none}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,88px);align-items:center}
+.hero-copy .lead{margin:30px 0 34px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.hero-note{margin-top:16px;font-size:14px;color:var(--ink-2)}
+.hero-media{position:relative}
+.hero-media .photo{aspect-ratio:4/5}
+.hero-media .photo img{object-position:50% 18%}
+.hero-media::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--gold);border-radius:calc(var(--r) + 4px);opacity:.7}
+.hero-badge{position:absolute;left:-22px;bottom:28px;background:var(--surface);border-radius:999px;padding:10px 18px 10px 12px;display:flex;align-items:center;gap:10px;font-size:13.5px;line-height:1.25;box-shadow:0 8px 24px rgba(21,19,20,.08)}
+.hero-badge i{width:32px;height:32px;border-radius:50%;background:var(--dark);display:grid;place-items:center}
+.hero-badge i svg{width:15px;height:15px}
+.hero-badge b{display:block;font-weight:600}
+.hero-facts{display:flex;gap:40px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+.hero-facts b{display:block;color:var(--ink);font-size:16px;font-weight:600}
+
+/* ================= MANIFESTO (scroll) ================= */
+.manifesto{padding:clamp(72px,9vw,120px) 0;background:var(--surface);text-align:center}
+.manifesto .kicker{margin-bottom:28px;justify-content:center}
+.manifesto p.big{font-size:clamp(30px,4.4vw,60px);line-height:1.12;letter-spacing:-.03em;font-weight:500;max-width:20ch;margin:0 auto}
+.manifesto .w{color:var(--ink-3);transition:color .25s linear}
+.manifesto .w.on{color:var(--ink)}
+.manifesto .w.it{color:var(--ink-3)}
+.manifesto .w.it.on{color:var(--rose)}
+
+/* ================= OBJETIVOS (interativo) ================= */
+.goals{padding:var(--section) 0}
+.goals-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:48px}
+.goals-layout{display:grid;grid-template-columns:1.35fr .9fr;gap:clamp(24px,4vw,48px);align-items:start}
+.tabs{display:inline-flex;padding:5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;margin-bottom:22px;position:relative}
+.tabs button{position:relative;z-index:1;border:0;background:none;padding:10px 26px;border-radius:999px;cursor:pointer;font-weight:600;font-size:15px;color:var(--ink-2);transition:color .3s}
+.tabs button[aria-selected="true"]{color:#fff}
+.tabs .pill{position:absolute;z-index:0;top:5px;bottom:5px;left:5px;border-radius:999px;background:var(--ink);transition:transform .45s var(--ease), width .45s var(--ease)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opts[hidden]{display:none}
+.opt{display:grid;grid-template-columns:1fr auto;gap:6px 14px;text-align:left;padding:20px 20px 22px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line);cursor:pointer;transition:border-color .25s, background .25s, transform .25s var(--ease)}
+.opt:hover{border-color:#B9B2AA;transform:translateY(-2px)}
+.opt strong{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.opt span.d{grid-column:1 / -1;font-size:14.5px;color:var(--ink-2);line-height:1.5}
+.opt .chk{width:24px;height:24px;border-radius:50%;border:1.5px solid #C4BEB7;display:grid;place-items:center;transition:background .25s, border-color .25s}
+.opt .chk svg{width:13px;height:13px;stroke:#fff;stroke-width:2.6;fill:none;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset .3s var(--ease) .05s}
+.opt[aria-pressed="true"]{background:var(--blush-soft);border-color:var(--rose)}
+.opt[aria-pressed="true"] .chk{background:var(--rose);border-color:var(--rose)}
+.opt[aria-pressed="true"] .chk svg{stroke-dashoffset:0}
+.goals .disclaimer{margin-top:22px;font-size:14.5px;color:var(--ink-2);max-width:60ch}
+
+.summary{position:sticky;top:100px;background:var(--dark);color:var(--on-dark);border-radius:20px;padding:30px}
+.summary .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:18px}
+.summary .top h3{font-size:17px}
+.summary .count{font-size:13.5px;color:var(--on-dark-2)}
+.summary .chips{display:flex;flex-wrap:wrap;gap:8px;min-height:36px;margin-bottom:22px}
+.summary .chip{display:inline-flex;align-items:center;gap:8px;padding:7px 8px 7px 14px;border-radius:999px;background:#383736;font-size:14px;animation:pop .35s var(--ease)}
+.summary .chip button{width:22px;height:22px;border:0;border-radius:50%;background:#4A4846;color:var(--on-dark);cursor:pointer;display:grid;place-items:center;font-size:14px;line-height:1}
+.summary .chip button:hover{background:#5a5755}
+.summary .empty{font-size:14.5px;color:var(--on-dark-2)}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+.bubble{background:#DCF8C6;color:#1d2a1a;border-radius:14px 14px 14px 4px;padding:14px 16px 10px;font-size:15px;line-height:1.5;position:relative;transition:opacity .2s}
+.bubble small{display:block;text-align:right;font-size:11.5px;color:#6b7d66;margin-top:4px}
+.bubble.flash{opacity:.55}
+.summary .label-msg{font-size:12.5px;color:var(--on-dark-2);margin-bottom:8px}
+.summary .btn{width:100%;margin-top:22px}
+.summary .clear{margin-top:14px;background:none;border:0;color:var(--on-dark-2);font-size:14px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:4px 0}
+.summary .clear[hidden]{display:none}
+
+/* ================= COMO FUNCIONA ================= */
+.how{padding:var(--section) 0;background:var(--surface)}
+.how .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(40px,7vw,110px);align-items:start}
+.how .side{position:sticky;top:120px}
+.how .side .lead{margin-top:22px}
+.timeline{position:relative;padding:0 0 0 44px}
+.timeline ol{list-style:none;margin:0;padding:0}
+.timeline .rail,.timeline .fill{position:absolute;left:11px;top:8px;width:2px;border-radius:2px}
+.timeline .rail{bottom:8px;background:var(--line)}
+.timeline .fill{height:0;background:linear-gradient(var(--gold),var(--rose))}
+.timeline li{position:relative;padding:4px 0 clamp(48px,6vw,72px)}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-41px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--surface);border:2px solid var(--line);transition:border-color .3s, background .3s, transform .3s var(--ease)}
+.timeline li.on::before{border-color:var(--rose);background:var(--rose);transform:scale(1.1)}
+.timeline .when{font-size:13px;font-weight:600;color:var(--ink-3);transition:color .3s;margin-bottom:8px}
+.timeline li.on .when{color:var(--rose)}
+.timeline h3{font-size:clamp(22px,2.2vw,28px);letter-spacing:-.025em;color:var(--ink-3);transition:color .3s}
+.timeline li.on h3{color:var(--ink)}
+.timeline p{margin-top:10px;color:var(--ink-2);max-width:44ch}
+
+/* ================= SOBRE ================= */
+.about{padding:var(--section) 0;background:var(--dark);color:var(--on-dark)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,104px);align-items:center}
+.about .photo{aspect-ratio:4/5;background:#3a3938}
+.about .photo img{object-position:50% 20%}
+.about .photo .ph{color:#8f8183}
+.about .photo .ph b{color:#B89A97}
+.about .kicker{color:var(--on-dark-2)}
+.about .kicker::before{background:var(--gold)}
+.about .pillar button span.t{color:var(--gold)}
+.about h2{max-width:none}
+.about .cred{margin-top:14px;color:var(--on-dark-2);font-size:15px}
+.about .text{margin-top:28px;color:var(--on-dark-2);max-width:48ch}
+.pillars{margin-top:36px;border-top:1px solid var(--dark-line)}
+.pillar{border-bottom:1px solid var(--dark-line)}
+.pillar button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;background:none;border:0;color:var(--on-dark);cursor:pointer;text-align:left}
+.pillar button span.t{font-family:var(--accent);font-style:italic;font-size:clamp(30px,3vw,40px);line-height:1}
+.pillar button .pm{width:34px;height:34px;border-radius:50%;border:1px solid var(--dark-line);position:relative;flex:none;transition:transform .35s var(--ease), border-color .2s}
+.pillar button .pm::before,.pillar button .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--on-dark);transform:translate(-50%,-50%)}
+.pillar button .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.pillar button[aria-expanded="true"] .pm{transform:rotate(45deg);border-color:var(--on-dark-2)}
+.pillar .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.pillar .body > div{overflow:hidden}
+.pillar .body p{padding:0 0 24px;color:var(--on-dark-2);max-width:46ch}
+.pillar button[aria-expanded="true"] + .body{grid-template-rows:1fr}
+.about-actions{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
+.about .textlink{color:var(--on-dark)}
+.mt-cta{margin-top:34px}
+
+/* ================= PROVA ================= */
+.proof{padding:clamp(64px,8vw,100px) 0;background:var(--blush)}
+.proof .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(24px,5vw,72px);align-items:center}
+.proof .num{font-size:clamp(72px,10vw,140px);font-weight:500;letter-spacing:-.05em;line-height:.85}
+.proof .num small{display:block;font-size:14px;letter-spacing:0;font-weight:500;color:var(--ink-2);margin-top:14px}
+.proof p{max-width:44ch;color:#4F4B47}
+.proof p strong{color:var(--ink)}
+.ig{display:flex;flex-direction:column;gap:10px}
+.ig a{display:flex;align-items:center;gap:12px;padding:10px 18px 10px 10px;border-radius:999px;background:rgba(255,255,255,.65);text-decoration:none;font-weight:600;font-size:15px;transition:background .2s, transform .25s var(--ease)}
+.ig a:hover{background:#fff;transform:translateX(4px)}
+.ig a i{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center}
+.ig a i svg{width:16px;height:16px}
+
+/* ================= FAQ (perguntas + painel) ================= */
+.faq{padding:var(--section) 0}
+.faq-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.qlist{display:flex;flex-direction:column;gap:8px}
+.q > button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;padding:18px 22px;border-radius:var(--r);border:1px solid var(--line);background:transparent;cursor:pointer;font-size:17px;font-weight:500;transition:background .25s, border-color .25s, color .25s}
+.q > button:hover{border-color:#B9B2AA}
+.q > button .ar{flex:none;transition:transform .3s var(--ease)}
+.q > button[aria-expanded="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.q > button[aria-expanded="true"] .ar{transform:translateX(4px)}
+.q .a{display:none}
+.panel{position:sticky;top:110px;background:var(--surface);border-radius:20px;padding:clamp(28px,3.5vw,44px);min-height:280px;display:flex;flex-direction:column}
+.panel .pq{font-size:clamp(24px,2.4vw,30px);font-weight:500;letter-spacing:-.025em;line-height:1.2}
+.panel .pa{margin-top:18px;color:var(--ink-2);font-size:17px}
+.panel .pfoot{margin-top:auto;padding-top:28px;font-size:14.5px;color:var(--ink-2)}
+.panel .swap{transition:opacity .25s, transform .25s var(--ease)}
+.panel .swap.out{opacity:0;transform:translateY(8px)}
+
+/* ================= CTA FINAL ================= */
+.final{padding:var(--section) 0 calc(var(--section) * .8)}
+.final .box{background:var(--dark);color:var(--on-dark);border-radius:28px;padding:clamp(40px,6vw,88px);display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end;position:relative;overflow:hidden}
+.final .mark-bg{position:absolute;right:-40px;top:-30px;width:clamp(220px,30vw,380px);height:clamp(220px,30vw,380px);opacity:.14;pointer-events:none}
+.final h2{font-size:clamp(44px,6.5vw,92px);max-width:11ch}
+.final .it{color:var(--gold)}
+.final .lead{color:var(--on-dark-2);margin-top:22px}
+.final .kicker::before{background:var(--gold)}
+.final .picked{margin-top:18px;font-size:15px;color:var(--on-dark)}
+.final .picked[hidden]{display:none}
+.final .act{position:relative;z-index:1}
+.final .act .btn{width:100%}
+.final .act p{margin-top:14px;font-size:14px;color:var(--on-dark-2)}
+
+/* ================= FOOTER ================= */
+.footer{padding:24px 0 48px;font-size:14px;color:var(--ink-2)}
+.footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
+.footer a{text-decoration:none}
+.footer a:hover{color:var(--ink)}
+.footer .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:22px;font-size:13px}
+
+/* ================= BOTÃO FLUTUANTE (desktop) ================= */
+.fab{position:fixed;right:28px;bottom:28px;z-index:60;display:flex;align-items:center;gap:0;height:60px;padding:0 18px;border-radius:999px;background:var(--cta);color:#fff;text-decoration:none;font-weight:600;font-size:15px;box-shadow:0 14px 34px rgba(42,42,43,.28);opacity:0;transform:translateY(20px) scale(.9);pointer-events:none;transition:opacity .35s var(--ease), transform .35s var(--ease), background .2s}
+.fab.show{opacity:1;transform:none;pointer-events:auto}
+.fab svg{width:24px;height:24px;flex:none}
+.fab span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .4s var(--ease), margin .4s var(--ease)}
+.fab:hover,.fab:focus-visible{background:var(--cta-hover)}
+.fab:hover span,.fab:focus-visible span{max-width:200px;margin-left:10px}
+
+/* ================= CTA FIXO MOBILE ================= */
+.dock{display:none}
+
+/* ================= REVEAL ================= */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease), transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .rv,.fade-up{opacity:1;transform:none}
+  .hero h1 .line > span{transform:none}
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 980px){
+  .nav .nl{display:none}
+  .hero .wrap,.goals-head,.goals-layout,.how .wrap,.about .wrap,.faq-grid,.final .box{grid-template-columns:1fr}
+  .summary,.how .side,.panel{position:static}
+  .proof .wrap{grid-template-columns:1fr}
+  .about .photo{max-width:480px}
+  .hero-media{max-width:480px}
+  .panel{display:none}
+  .q .a{display:block;overflow:hidden;max-height:0;transition:max-height .45s var(--ease)}
+  .q .a p{padding:16px 22px 22px;color:var(--ink-2)}
+  .q.open .a{max-height:400px}
+  .q > button[aria-expanded="true"] .ar{transform:rotate(90deg)}
+}
+@media (max-width: 640px){
+  body{font-size:16px}
+  .header .wrap{height:66px}
+  .nav .btn{display:none}
+  .hero{padding-top:108px}
+  h1{font-size:clamp(44px,12.4vw,56px)}
+  .hero .wrap{gap:36px}
+  .hero-copy .lead{margin:22px 0 26px}
+  .hero-actions .btn{width:100%}
+  .hero-media{margin:0 6px 0 14px}
+  .hero-media .photo{aspect-ratio:4/4.6}
+  .hero-media::before{inset:-10px 10px 10px -10px}
+  .hero-badge{left:-6px;bottom:16px}
+  .logo .mk{width:38px;height:38px}
+  .logo b{font-size:15px}
+  .logo .lt > span{font-size:9.5px}
+  .hero-facts{gap:24px;flex-wrap:wrap}
+  .opts{grid-template-columns:1fr}
+  .opt{padding:18px}
+  .tabs{display:flex}
+  .tabs button{flex:1}
+  .summary{padding:24px;border-radius:18px}
+  .timeline{padding-left:38px}
+  .timeline li::before{left:-35px}
+  .timeline .rail,.timeline .fill{left:10px}
+  .final .box{border-radius:22px}
+  .footer{padding-bottom:120px}
+  .fab{display:none}
+  .dock{display:block;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;transform:translateY(150%);transition:transform .45s var(--ease)}
+  .dock.show{transform:none}
+  .dock .btn{width:100%;box-shadow:0 12px 30px rgba(21,19,20,.25)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E2C899"/><stop offset=".45" stop-color="#B08A55"/><stop offset=".75" stop-color="#D3B47E"/><stop offset="1" stop-color="#9C7442"/>
+    </linearGradient>
+    <symbol id="fa-mark" viewBox="0 0 362 362">
+      <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="square">
+        <path d="M8 357V10H216"/><path d="M8 217H125"/><path d="M102 355V45L353 350H295L143 153V165"/>
+      </g>
+    </symbol>
+    <symbol id="fa-mark-sm" viewBox="0 0 362 362">
+      <g fill="none" stroke="url(#gold)" stroke-width="20" stroke-linecap="square">
+        <path d="M10 352V12H216"/><path d="M10 217H125"/><path d="M102 352V45L353 350H295L143 153V170"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#topo" class="logo" aria-label="Clínica Fernanda Agostini – início"><span class="mk"><svg aria-hidden="true"><use href="#fa-mark-sm"/></svg></span><span class="lt"><b>Fernanda Agostini</b><span>Harmonização facial e corporal</span></span></a>
+    <nav class="nav" aria-label="Principal">
+      <a class="nl" href="#objetivos">Objetivos</a>
+      <a class="nl" href="#como-funciona">Como funciona</a>
+      <a class="nl" href="#sobre">A Dra. Fernanda</a>
+      <a class="nl" href="#duvidas">Dúvidas</a>
+      <a class="btn js-wa" href="#">WhatsApp <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div class="hero-copy">
+    <p class="kicker fade-up" style="transition-delay:.1s">Clínica em Primavera do Leste – MT</p>
+    <h1>
+      <span class="line"><span>Realçar o que é</span></span>
+      <span class="line"><span>seu, <span class="it">sem mudar</span></span></span>
+      <span class="line"><span>quem você é.</span></span>
+    </h1>
+      <div class="fade-up">
+        <p class="lead">Harmonização facial e corporal com a Dra. Fernanda Agostini. Cada plano nasce de uma avaliação individual e do resultado que você quer ver no espelho, com naturalidade e saúde em primeiro lugar.</p>
+        <div class="hero-actions">
+          <a class="btn js-wa" href="#">Agendar pelo WhatsApp <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+          <a class="textlink" href="#objetivos">Prefiro escolher meus objetivos ↓</a>
+        </div>
+        <p class="hero-note">Atendimento pelo WhatsApp (66) 99601-4364. Tire suas dúvidas antes de marcar.</p>
+        <div class="hero-facts">
+          <div><b>Farmacêutica</b>CRF 586778</div>
+          <div><b>+11 mil</b>seguidores no Instagram</div>
+        </div>
+      </div>
+    </div>
+
+      <div class="hero-media fade-up" style="transition-delay:.5s">
+        <div class="photo"><img src="img/fernanda-agostini.jpg" alt="Dra. Fernanda Agostini" width="1000" height="1207" fetchpriority="high"></div>
+        <div class="hero-badge"><i aria-hidden="true"><svg><use href="#fa-mark-sm"/></svg></i><div><b>Naturalidade e saúde</b>o princípio da clínica</div></div>
+      </div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="manifesto" aria-labelledby="t-man">
+  <div class="wrap">
+    <p class="kicker">Antes de tudo</p>
+    <h2 id="t-man" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Por que tudo começa pela avaliação</h2>
+    <p class="big js-words">O melhor resultado é quando elogiam você <em class="it">sem saber o que você fez.</em></p>
+    <a class="btn js-wa mt-cta" href="#" data-msg="Olá! Vim pelo site e quero um resultado natural. Gostaria de agendar uma avaliação.">Quero um resultado natural <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ================= OBJETIVOS (interativo) ================= -->
+<!-- CONFIRMAR com a clínica: lista de objetivos/procedimentos realmente oferecidos -->
+<section class="goals" id="objetivos" aria-labelledby="t-obj">
+  <div class="wrap">
+    <div class="goals-head rv">
+      <div>
+        <p class="kicker">Monte sua mensagem</p>
+        <h2 id="t-obj">O que você gostaria de <span class="it">melhorar?</span></h2>
+      </div>
+      <p class="lead">Toque nos objetivos que combinam com você. A mensagem para a clínica se escreve sozinha, e é só enviar pelo WhatsApp.</p>
+    </div>
+
+    <div class="goals-layout">
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Área">
+          <span class="pill" aria-hidden="true"></span>
+          <button role="tab" id="tab-rosto" aria-selected="true" aria-controls="p-rosto">Rosto</button>
+          <button role="tab" id="tab-corpo" aria-selected="false" aria-controls="p-corpo" tabindex="-1">Corpo</button>
+        </div>
+
+        <div class="opts" id="p-rosto" role="tabpanel" aria-labelledby="tab-rosto">
+          <button class="opt" aria-pressed="false" data-goal="contorno do rosto"><strong>Contorno do rosto</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Mandíbula, queixo e maçãs com mais estrutura e equilíbrio.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="lábios"><strong>Lábios</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Volume, contorno ou hidratação, proporcionais ao seu rosto.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="linhas de expressão"><strong>Linhas de expressão</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Suavizar marcas da testa e dos olhos sem perder a sua expressão.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="olhar cansado"><strong>Olhar cansado</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Olheiras e aparência de cansaço ao redor dos olhos.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="firmeza e viço da pele do rosto"><strong>Pele com firmeza e viço</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Qualidade de pele, sustentação e aparência descansada.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="uma avaliação geral do rosto"><strong>Não sei por onde começar</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Uma avaliação geral para entender o que faz sentido para você.</span></button>
+        </div>
+
+        <div class="opts" id="p-corpo" role="tabpanel" aria-labelledby="tab-corpo" hidden>
+          <button class="opt" aria-pressed="false" data-goal="glúteos"><strong>Glúteos</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Mais contorno, projeção e firmeza, proporcionais ao seu corpo.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="firmeza da pele do corpo"><strong>Firmeza da pele</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Flacidez e qualidade da pele nas áreas que mais te incomodam.</span></button>
+          <button class="opt" aria-pressed="false" data-goal="outra área do corpo"><strong>Outra área</strong><span class="chk"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><span class="d">Conte na conversa o que você gostaria de mudar.</span></button>
+        </div>
+
+        <p class="disclaimer">A indicação de cada procedimento é definida na avaliação. Objetivos parecidos podem pedir caminhos diferentes, e muitas vezes o resultado mais bonito vem de fazer menos.</p>
+      </div>
+
+      <aside class="summary rv" aria-live="polite">
+        <div class="top"><h3>Sua mensagem</h3><span class="count" id="count">Nenhum objetivo</span></div>
+        <div class="chips" id="chips"><p class="empty">Escolha um ou mais objetivos ao lado.</p></div>
+        <p class="label-msg">Prévia do que será enviado</p>
+        <div class="bubble" id="bubble"><span id="msgText"></span><small>agora ✓✓</small></div>
+        <a class="btn light js-wa" href="#" id="sendBtn"><span id="sendLabel">Agendar pelo WhatsApp</span> <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+        <button class="clear" id="clearBtn" hidden>Limpar seleção</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="how" id="como-funciona" aria-labelledby="t-como">
+  <div class="wrap">
+    <div class="side rv">
+      <p class="kicker">Na prática</p>
+      <h2 id="t-como">Você sabe o que vai acontecer em <span class="it">cada etapa.</span></h2>
+      <p class="lead">Sem pressa e sem surpresa. Você só decide depois de entender o plano, as etapas e o investimento.</p>
+      <a class="btn js-wa mt-cta" href="#" data-msg="Olá! Vim pelo site e gostaria de dar o primeiro passo: agendar minha avaliação.">Dar o primeiro passo <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+    </div>
+    <div class="timeline" id="timeline">
+      <span class="rail" aria-hidden="true"></span><span class="fill" id="fill" aria-hidden="true"></span>
+      <ol>
+      <li>
+        <p class="when">Primeiro contato</p>
+        <h3>Você chama no WhatsApp</h3>
+        <p>Conta o que gostaria de melhorar e escolhe um horário para a avaliação.</p>
+      </li>
+      <li>
+        <p class="when">Na clínica</p>
+        <h3>Avaliação individual</h3>
+        <p>A Dra. Fernanda analisa rosto ou corpo com calma, escuta suas expectativas e explica o que é possível alcançar.</p>
+      </li>
+      <li>
+        <p class="when">Antes de decidir</p>
+        <h3>Plano sob medida</h3>
+        <p>Você recebe a indicação dos procedimentos, as etapas e o investimento, e decide no seu tempo.</p>
+      </li>
+      <li>
+        <p class="when">Com tudo combinado</p>
+        <h3>Procedimento e cuidados</h3>
+        <p>O procedimento é feito na clínica e você sai com as orientações para os dias seguintes.</p>
+      </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="about" id="sobre" aria-labelledby="t-sobre">
+  <div class="wrap">
+    <div class="rv">
+      <div class="photo"><img src="img/dra-fernanda-agostini.jpg" alt="Dra. Fernanda Agostini" width="1000" height="1121" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <p class="kicker">Quem cuida de você</p>
+      <h2 id="t-sobre">Dra. Fernanda Agostini</h2>
+      <p class="cred">Farmacêutica · CRF 586778</p>
+      <p class="text">A Dra. Fernanda dedica seu trabalho à harmonização facial e corporal. Na clínica que leva o seu nome, em Primavera do Leste, o atendimento segue dois princípios que vêm antes de qualquer tendência.</p>
+      <!-- OPCIONAL: inserir formação, especializações e tempo de atuação quando a clínica enviar -->
+      <div class="pillars">
+        <div class="pillar">
+          <button aria-expanded="true" aria-controls="pl-1"><span class="t">Naturalidade</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="body" id="pl-1"><div><p>O resultado precisa combinar com você: no espelho, nas fotos e no dia a dia. A ideia é realçar traços, não trocar de rosto.</p></div></div>
+        </div>
+        <div class="pillar">
+          <button aria-expanded="false" aria-controls="pl-2"><span class="t">Saúde</span><span class="pm" aria-hidden="true"></span></button>
+          <div class="body" id="pl-2"><div><p>Cada indicação considera o seu histórico, a segurança do procedimento e o momento certo de fazer.</p></div></div>
+        </div>
+      </div>
+      <div class="about-actions">
+        <a class="btn light js-wa" href="#" data-msg="Olá, Dra. Fernanda! Vim pelo site e gostaria de agendar uma avaliação com você.">Falar com a Dra. Fernanda <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+        <a class="textlink" href="https://www.instagram.com/drafernandaagostini_/" target="_blank" rel="noopener">Ver o Instagram ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROVA / INSTAGRAM ================= -->
+<section class="proof" aria-label="Instagram da clínica">
+  <div class="wrap rv">
+    <div class="num"><span id="counter" data-to="11.2">11,2</span> mil<small>pessoas acompanham a clínica no Instagram</small></div>
+    <p><strong>Resultados, bastidores e explicações sobre cada procedimento.</strong> Vale dar uma olhada antes da sua avaliação para conhecer o estilo de trabalho da clínica.<br><a class="textlink js-wa" style="margin-top:14px" href="#" data-msg="Olá! Vi o trabalho da clínica no Instagram e gostaria de agendar uma avaliação.">Gostei do que vi, quero agendar →</a></p>
+    <div class="ig">
+      <a href="https://www.instagram.com/clinicafernandaagostini/" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></i>@clinicafernandaagostini</a>
+      <a href="https://www.instagram.com/drafernandaagostini_/" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></i>@drafernandaagostini_</a>
+    </div>
+  </div>
+  <!-- DEPOIMENTOS: ativar quando houver depoimentos reais autorizados ou avaliações do Google -->
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div class="faq-head rv">
+      <div>
+        <p class="kicker">Dúvidas</p>
+        <h2 id="t-faq">O que costuma surgir <span class="it">antes de agendar</span></h2>
+      </div>
+      <a class="textlink js-wa" href="#" data-msg="Olá! Vim pelo site e tenho uma dúvida antes de agendar.">Minha dúvida não está aqui →</a>
+    </div>
+    <div class="faq-grid rv">
+      <div class="qlist" id="qlist">
+        <div class="q"><button aria-expanded="false">Vou ficar com aparência artificial?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>O objetivo é o contrário. O plano parte das suas proporções e do que você quer preservar. Se algo não combinar com o seu rosto ou o seu corpo, isso é conversado com sinceridade na avaliação.</p></div></div>
+        <div class="q"><button aria-expanded="false">Quanto custa?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>O valor depende dos procedimentos indicados e da quantidade necessária para o seu caso. Por isso, o investimento é apresentado depois da avaliação, antes de qualquer decisão.</p></div></div>
+        <div class="q"><button aria-expanded="false">Dói?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>A sensibilidade varia de pessoa para pessoa e de procedimento para procedimento. Na avaliação você entende como é cada etapa e o que é feito para deixar o atendimento mais confortável.</p></div></div>
+        <div class="q"><button aria-expanded="false">Quanto tempo dura o resultado?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>Depende do procedimento, do produto utilizado e de como o seu organismo responde. Essa estimativa faz parte da explicação do seu plano.</p></div></div>
+        <div class="q"><button aria-expanded="false">Vou precisar me afastar da rotina?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>Muitos procedimentos permitem voltar às atividades no mesmo dia, mas alguns pedem cuidados nos dias seguintes. Você recebe todas as orientações antes e depois.</p></div></div>
+        <div class="q"><button aria-expanded="false">Quem realiza os procedimentos?<span class="ar" aria-hidden="true">→</span></button><div class="a"><p>A Dra. Fernanda Agostini, farmacêutica registrada no Conselho Regional de Farmácia sob o nº 586778.</p></div></div>
+      </div>
+      <div class="panel" aria-live="polite">
+        <div class="swap" id="panelSwap">
+          <p class="pq" id="pq"></p>
+          <p class="pa" id="pa"></p>
+        </div>
+        <p class="pfoot">Ainda ficou em dúvida? A clínica responde pelo WhatsApp antes de você marcar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final" aria-labelledby="t-final">
+  <div class="wrap">
+    <div class="box rv">
+      <svg class="mark-bg" aria-hidden="true"><use href="#fa-mark"/></svg>
+      <div style="position:relative;z-index:1">
+        <p class="kicker" style="color:var(--on-dark-2)">Próximo passo</p>
+        <h2 id="t-final">Agende sua <span class="it">experiência.</span></h2>
+        <p class="lead">O primeiro passo é uma conversa. Conte o que você gostaria de melhorar e marque sua avaliação com a Dra. Fernanda.</p>
+        <p class="picked" id="picked" hidden></p>
+      </div>
+      <div class="act">
+        <a class="btn light js-wa" href="#"><span class="js-label">Agendar pelo WhatsApp</span> <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+        <p>(66) 99601-4364 · Primavera do Leste – MT</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="row">
+      <a href="#topo" class="logo"><span class="mk"><svg aria-hidden="true"><use href="#fa-mark-sm"/></svg></span><span class="lt"><b>Fernanda Agostini</b><span>Harmonização facial e corporal</span></span></a>
+      <ul>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#sobre">A Dra. Fernanda</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="https://www.instagram.com/clinicafernandaagostini/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" class="js-wa">WhatsApp (66) 99601-4364</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>Fernanda Agostini – Harmonização Facial e Corporal Ltda · CNPJ 49.845.793/0001-39 · Primavera do Leste – MT · Responsável técnica: Dra. Fernanda Agostini, CRF 586778</span>
+      <!-- INSERIR endereço completo quando confirmado -->
+      <span>Site por <a href="https://www.instagram.com/leste_studio/" target="_blank" rel="noopener">Leste Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab js-wa" id="fab" href="#" aria-label="Falar pelo WhatsApp: (66) 99601-4364"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg><span>Falar pelo WhatsApp</span></a>
+
+<div class="dock" id="dock">
+  <a class="btn js-wa" href="#"><span class="js-label">Agendar pelo WhatsApp</span> <span class="arr wa"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06a6.77 6.77 0 0 1-3.37-2.94c-.25-.44.25-.41.72-1.36.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74 1.58.68 2.19.74 2.98.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></span></a>
+</div>
+
+<script>
+/* ===== CONFIGURAÇÃO =====
+   WhatsApp da clínica só com números: 55 + DDD + número (ex.: "5566999999999").
+   Enquanto estiver vazio, os botões abrem o Instagram da clínica. */
+const WHATSAPP = "5566996014364"; // (66) 99601-4364
+const FALLBACK = "https://www.instagram.com/clinicafernandaagostini/";
+
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const selected = [];   // objetivos escolhidos, na ordem
+const BASE = "Olá! Vim pelo site e gostaria de agendar uma avaliação.";
+
+function joinPt(list){
+  if (list.length <= 1) return list.join("");
+  return list.slice(0,-1).join(", ") + " e " + list[list.length-1];
+}
+function composeMsg(){
+  return selected.length ? BASE + " Tenho interesse em: " + joinPt(selected) + "." : BASE;
+}
+function waHref(msg){
+  return WHATSAPP ? "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg) : FALLBACK;
+}
+function refreshLinks(){
+  document.querySelectorAll(".js-wa").forEach(function(el){
+    const own = el.getAttribute("data-msg");
+    el.href = waHref(own || composeMsg());
+    el.target = "_blank"; el.rel = "noopener";
+  });
+}
+
+/* ---------- carregamento ---------- */
+requestAnimationFrame(function(){ document.documentElement.classList.add("loaded"); document.body.classList.add("loaded"); });
+
+/* ---------- header: some ao descer, volta ao subir ---------- */
+const header = document.getElementById("header");
+let lastY = window.scrollY;
+
+/* ---------- objetivos ---------- */
+const tabs = document.querySelectorAll('[role="tab"]');
+const pill = document.querySelector(".tabs .pill");
+function movePill(btn){
+  pill.style.width = btn.offsetWidth + "px";
+  pill.style.transform = "translateX(" + (btn.offsetLeft - 5) + "px)";
+}
+function selectTab(btn, focus){
+  tabs.forEach(function(t){
+    const on = t === btn;
+    t.setAttribute("aria-selected", on);
+    t.tabIndex = on ? 0 : -1;
+    document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+  });
+  movePill(btn);
+  if (focus) btn.focus();
+}
+tabs.forEach(function(t, i){
+  t.addEventListener("click", function(){ selectTab(t); });
+  t.addEventListener("keydown", function(e){
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft"){
+      e.preventDefault();
+      selectTab(tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length], true);
+    }
+  });
+});
+window.addEventListener("load", function(){ movePill(document.querySelector('[role="tab"][aria-selected="true"]')); });
+window.addEventListener("resize", function(){ movePill(document.querySelector('[role="tab"][aria-selected="true"]')); });
+
+const chips = document.getElementById("chips");
+const count = document.getElementById("count");
+const msgText = document.getElementById("msgText");
+const bubble = document.getElementById("bubble");
+const clearBtn = document.getElementById("clearBtn");
+const sendLabel = document.getElementById("sendLabel");
+const picked = document.getElementById("picked");
+
+function label(goal){ return goal.charAt(0).toUpperCase() + goal.slice(1); }
+
+function render(){
+  // chips
+  chips.innerHTML = "";
+  if (!selected.length){
+    chips.innerHTML = '<p class="empty">Escolha um ou mais objetivos ao lado.</p>';
+  } else {
+    selected.forEach(function(g){
+      const c = document.createElement("span");
+      c.className = "chip";
+      c.innerHTML = '<span></span><button type="button" aria-label="Remover ' + g + '">×</button>';
+      c.firstChild.textContent = label(g);
+      c.querySelector("button").addEventListener("click", function(){ toggle(g); });
+      chips.appendChild(c);
+    });
+  }
+  count.textContent = selected.length === 0 ? "Nenhum objetivo" : selected.length === 1 ? "1 objetivo" : selected.length + " objetivos";
+  clearBtn.hidden = !selected.length;
+
+  // prévia da mensagem
+  bubble.classList.add("flash");
+  setTimeout(function(){ msgText.textContent = composeMsg(); bubble.classList.remove("flash"); }, reduce ? 0 : 140);
+
+  // rótulos dos CTAs
+  const lbl = selected.length ? "Enviar pelo WhatsApp" : "Agendar pelo WhatsApp";
+  sendLabel.textContent = lbl;
+  document.querySelectorAll(".js-label").forEach(function(el){
+    el.textContent = selected.length ? "Enviar pelo WhatsApp (" + selected.length + ")" : "Agendar pelo WhatsApp";
+  });
+  picked.hidden = !selected.length;
+  picked.textContent = selected.length ? "Seus objetivos: " + joinPt(selected) + "." : "";
+
+  // estado dos botões
+  document.querySelectorAll(".opt").forEach(function(o){
+    o.setAttribute("aria-pressed", selected.indexOf(o.dataset.goal) > -1);
+  });
+  refreshLinks();
+}
+function toggle(goal){
+  const i = selected.indexOf(goal);
+  if (i > -1) selected.splice(i,1); else selected.push(goal);
+  render();
+}
+document.querySelectorAll(".opt").forEach(function(o){
+  o.addEventListener("click", function(){ toggle(o.dataset.goal); });
+});
+clearBtn.addEventListener("click", function(){ selected.length = 0; render(); });
+
+/* ---------- manifesto: palavras acendem com a rolagem ---------- */
+const big = document.querySelector(".js-words");
+(function splitWords(node){
+  Array.from(node.childNodes).forEach(function(ch){
+    if (ch.nodeType === 3){
+      const frag = document.createDocumentFragment();
+      ch.textContent.split(/(\s+)/).forEach(function(part){
+        if (!part) return;
+        if (/^\s+$/.test(part)) frag.appendChild(document.createTextNode(part));
+        else { const s = document.createElement("span"); s.className = "w"; s.textContent = part; frag.appendChild(s); }
+      });
+      node.replaceChild(frag, ch);
+    } else if (ch.nodeType === 1){
+      ch.classList.add("w");
+    }
+  });
+})(big);
+const words = big.querySelectorAll(".w");
+
+/* ---------- linha do tempo ---------- */
+const timeline = document.getElementById("timeline");
+const fill = document.getElementById("fill");
+const steps = timeline.querySelectorAll("li");
+
+/* ---------- CTA fixo mobile ---------- */
+const dock = document.getElementById("dock");
+const hero = document.querySelector(".hero");
+const finalSec = document.querySelector(".final");
+
+let ticking = false;
+function onScroll(){
+  const y = window.scrollY, vh = window.innerHeight;
+
+  // header
+  header.classList.toggle("solid", y > 10);
+  header.classList.toggle("hide", y > lastY && y > 300);
+  lastY = y;
+
+  // manifesto
+  if (reduce){ words.forEach(function(w){ w.classList.add("on"); }); }
+  else {
+    const r = big.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, (vh * .85 - r.top) / (r.height + vh * .35)));
+    const n = Math.round(p * words.length);
+    words.forEach(function(w, i){ w.classList.toggle("on", i < n); });
+  }
+
+  // timeline
+  const tr = timeline.getBoundingClientRect();
+  const mid = vh * .6;
+  const prog = Math.min(1, Math.max(0, (mid - tr.top) / tr.height));
+  fill.style.height = (prog * (tr.height - 16)) + "px";
+  steps.forEach(function(li){ li.classList.toggle("on", li.getBoundingClientRect().top < mid); });
+
+  // dock
+  const pastHero = hero.getBoundingClientRect().bottom < 80;
+  const atFinal = finalSec.getBoundingClientRect().top < vh * .9;
+  dock.classList.toggle("show", pastHero && !atFinal);
+  document.getElementById("fab").classList.toggle("show", pastHero && !atFinal);
+
+  ticking = false;
+}
+window.addEventListener("scroll", function(){ if (!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+window.addEventListener("resize", onScroll);
+
+/* ---------- pilares (Naturalidade / Saúde) ---------- */
+document.querySelectorAll(".pillar button").forEach(function(b){
+  b.addEventListener("click", function(){
+    const open = b.getAttribute("aria-expanded") === "true";
+    document.querySelectorAll(".pillar button").forEach(function(o){ o.setAttribute("aria-expanded", "false"); });
+    b.setAttribute("aria-expanded", String(!open));
+  });
+});
+
+/* ---------- FAQ: lista + painel (desktop) / expansão (mobile) ---------- */
+const qs = document.querySelectorAll(".q");
+const pq = document.getElementById("pq"), pa = document.getElementById("pa"), swap = document.getElementById("panelSwap");
+const mq = window.matchMedia("(max-width: 980px)");
+function showQ(q, animate){
+  const btn = q.querySelector("button");
+  if (mq.matches){
+    const open = !q.classList.contains("open");
+    qs.forEach(function(o){ o.classList.remove("open"); o.querySelector("button").setAttribute("aria-expanded","false"); });
+    if (open){ q.classList.add("open"); btn.setAttribute("aria-expanded","true"); }
+    return;
+  }
+  qs.forEach(function(o){ o.querySelector("button").setAttribute("aria-expanded", String(o === q)); });
+  const set = function(){ pq.textContent = btn.firstChild.textContent; pa.textContent = q.querySelector(".a p").textContent; swap.classList.remove("out"); };
+  if (animate && !reduce){ swap.classList.add("out"); setTimeout(set, 200); } else set();
+}
+qs.forEach(function(q){ q.querySelector("button").addEventListener("click", function(){ showQ(q, true); }); });
+function initFaq(){
+  qs.forEach(function(o){ o.classList.remove("open"); o.querySelector("button").setAttribute("aria-expanded","false"); });
+  if (!mq.matches) showQ(qs[0], false);
+}
+mq.addEventListener ? mq.addEventListener("change", initFaq) : mq.addListener(initFaq);
+initFaq();
+
+/* ---------- revelação ao rolar ---------- */
+const rvs = document.querySelectorAll(".rv");
+if (reduce || !("IntersectionObserver" in window)) rvs.forEach(function(el){ el.classList.add("in"); });
+else {
+  const io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {rootMargin:"0px 0px -8% 0px", threshold:.06});
+  rvs.forEach(function(el){ io.observe(el); });
+}
+
+/* ---------- contador do Instagram ---------- */
+const counter = document.getElementById("counter");
+if (!reduce && "IntersectionObserver" in window){
+  const to = parseFloat(counter.dataset.to);
+  counter.textContent = "0";
+  const co = new IntersectionObserver(function(es){
+    if (!es[0].isIntersecting) return;
+    co.disconnect();
+    const t0 = performance.now(), dur = 1400;
+    (function step(t){
+      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      counter.textContent = (to * e).toFixed(1).replace(".", ",");
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+  }, {threshold:.5});
+  co.observe(counter);
+}
+
+render();
+onScroll();
+</script>
+</body>
+</html>
